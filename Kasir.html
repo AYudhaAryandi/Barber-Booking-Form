@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Kasir Barbershop</title>
+    
+</head>
+<body>
+
+    <h1>Kasir Barbershop</h1>
+
+    <div>
+        <form id="formPembayaran">
+            <label for="namaPelanggan">Nama:</label>
+            <input type="text" id="namaPelanggan" required>
+    
+            <label for="totalHarga">Harga:</label>
+            <input type="text" id="totalHarga" placeholder="Rp 0" required>
+    
+            <label for="tanggal">Tanggal:</label>
+            <input type="text" id="tanggal" required>
+    
+            <label for="namaKasir">Nama Kasir:</label>
+            <select id="layanan" required>
+                <option value="Blank"></option>
+                <option value="Kasir 1">Kasir 1</option>
+                <option value="Kasir 2">Kasir 2</option>
+            </select>
+    
+            <label>Service:</label>
+            <select id="layanan" required>
+                <option value="Blank"></option>
+                <option value="Haircut">Haircut</option>
+                <option value="Shave">Shave</option>
+                <option value="Beard Trim">Beard Trim</option>
+            </select>
+    
+            <button type="button" onclick="prosesPembayaran()">Proses Pembayaran</button>
+        </form>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Tanggal</th>
+                <th>Nama Kasir</th>
+                <th>Service</th>
+            </tr>
+        </thead>
+
+    </table>
+
+
+</body>
+</html>
